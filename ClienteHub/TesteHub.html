@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mensagens</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><style type="text/css">
+        .container {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/aspnet-signalr/1.1.4/signalr.min.js'></script>
+    <script src='main.js'></script>
+
+</head>
+<body>	
+	<div class="container">
+	    <input type="text" id="nome" />
+        <input type="text" id="mensagem" />
+        <input type="button" id="enviamensagem" value="Send" onclick="sendMessage()" />
+        <input type="hidden" id="exibenome" />
+        <ul id="discussion">
+        </ul>
+    </div>
+	
+	<ul id="messagesList"></ul>
+</body>
+</html>
